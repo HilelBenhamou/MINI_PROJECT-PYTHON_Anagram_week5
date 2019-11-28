@@ -35,13 +35,9 @@ class AnagramChecker:
                 # lineList.sort()
                 # wordInList.sort()
                 if sorted(wordInList) == sorted(lineList):
-                    print(f'Here are all the anagrams of {self.word} : {lineList}')
-
-
-
-
-    # def is_anagram(self,word1, word2):
-    #     pass
+                    wordInList="".join(wordInList)
+                    lineList= "".join(lineList)
+                    print(f'Your word : {wordInList}\nThis is a valid English word\nAnagrams for you word : {lineList}')
 
 
 # if __name__ == "__main__":
